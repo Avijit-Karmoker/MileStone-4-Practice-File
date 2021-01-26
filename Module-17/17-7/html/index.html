@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        article{
+            border: 2px solid #ec4646;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h3>article-1</h3>
+        <p class="author">author-1</p>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti ipsa quia autem expedita animi tenetur dolorum porro ad necessitatibus.
+        </p>
+    </article>
+    <article>
+        <h3>article-2</h3>
+        <p class="author">author-2</p>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti ipsa quia autem expedita animi tenetur dolorum porro ad necessitatibus.
+        </p>
+    </article>
+    <article>
+        <h3>article-3</h3>
+        <p class="author">author-3</p>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti ipsa quia autem expedita animi tenetur dolorum porro ad necessitatibus.
+        </p>
+    </article>
+    <script>
+        var authors = document.getElementsByClassName('author');
+        for (var i = 0; i < authors.length; i++) {
+            var element = authors[i];
+            console.log(element.innerHTML);
+            element.style.backgroundColor = '#719fb0';
+            element.style.margin = '10px';
+            element.innerHTML = 'Lekhok-' + (i + 1);
+        }
+
+    </script>
+</body>
+
+</html>

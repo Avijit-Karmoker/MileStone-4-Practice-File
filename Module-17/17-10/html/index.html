@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        article {
+            border: 2px solid #ec4646;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <article id="first-article">
+        <h3>article-1</h3>
+        <p class="author">author-1</p>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti ipsa quia autem expedita animi tenetur dolorum porro ad necessitatibus.
+        </p>
+    </article>
+    <article>
+        <h3>article-2</h3>
+        <p class="author">author-2</p>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti ipsa quia autem expedita animi tenetur dolorum porro ad necessitatibus.
+        </p>
+    </article>
+    <article>
+        <h3>article-3</h3>
+        <p class="author">author-3</p>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti ipsa quia autem expedita animi tenetur dolorum porro ad necessitatibus.
+        </p>
+    </article>
+    <article>
+        <ul id="gift-item">
+            <li>list-item-1</li>
+            <li>list-item-2</li>
+            <li>list-item-3</li>
+            <li>list-item-4</li>
+            <li>list-item-5</li>
+        </ul>
+    </article>
+    <script>
+        const article = document.getElementById('first-article');
+        const newParagraph = document.createElement('p');
+        newParagraph.innerHTML = 'This paragraph is added by JavaScript.'
+        article.appendChild(newParagraph);
+
+        //add one more gift item
+        const ul = document.getElementById('gift-item');
+        const newUl = document.createElement('li');
+        newUl.innerHTML = 'Gift-item-6';
+        ul.appendChild(newUl);
+    </script>
+</body>
+
+</html>

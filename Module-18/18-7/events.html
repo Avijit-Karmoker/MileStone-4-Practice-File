@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event management Company</title>
+</head>
+
+<body>
+    <h1>Exploring event</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, incidunt.</p>
+    <p>Odio delectus, repellendus asperiores rerum consectetur possimus autem. Reprehenderit, voluptatem.</p>
+    <p>Iure fugiat aut cupiditate, necessitatibus provident quasi, sequi sit similique.</p>
+    <p>Perferendis voluptatum officiis, architecto quos excepturi rerum! Maxime, deserunt similique!</p>
+    <p>Aliquid accusamus, quia esse cum odio maxime eius expedita recusandae.</p>
+    <p>Reprehenderit porro, molestiae. Cupiditate obcaecati, atque neque nemo, enim accusamus!</p>
+    <p>Magni velit fuga exercitationem rerum soluta sit tempore? Cupiditate, eos!</p>
+    <p>Nostrum amet optio labore, id nemo accusantium sed doloremque voluptas!</p>
+    <p>In reprehenderit laboriosam dicta, commodi, id maxime doloremque fuga expedita!</p>
+    <p>Quasi facere, porro quod vel nesciunt saepe cumque similique obcaecati!</p>
+    <button>Click me-1</button>
+    <button>Click me-2</button>
+    <button>Click me-3</button>
+    <button>Click me-4</button>
+    <button id="last-button">Click me-5</button>
+    <script>
+        function handleClick() {
+            document.body.style.color = 'tomato';
+            document.body.style.backgroundColor = '#a0c1b8';
+        }
+//        one way
+        const lastButton = document.getElementById('last-button');
+//        lastButton.onclick = handleClick;
+
+//        another way
+        lastButton.addEventListener('click', handleClick);
+
+
+    </script>
+</body>
+
+</html>

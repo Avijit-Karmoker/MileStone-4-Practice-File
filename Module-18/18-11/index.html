@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>My List</h1>
+        <ul id="myList">
+            <li id="first" class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Laborum quas aliquid sequi sit!</li>
+            <li class="item">Explicabo, rem, magni. Inventore, fugit?</li>
+            <li class="item">Eius aliquid exercitationem, numquam dolores!</li>
+            <li class="item">Pariatur doloribus assumenda veritatis, voluptatibus.</li>
+        </ul>
+        <button id="addNew">Add New Item</button>
+    </div>
+    <script>
+//        var items = document.getElementsByClassName('item');
+//        for (let i = 0; i < items.length; i++) {
+//            var item = items[i];
+//            item.addEventListener('click', function(event){
+////                console.log(this.event);
+////                console.log(event.target.parentNode);
+//                event.target.parentNode.removeChild(event.target);
+//            })
+//        }
+
+        document.getElementById('addNew').addEventListener('click', function(event){
+            var itemParent = document.getElementById('myList');
+            var newItem = document.createElement('li');
+            newItem.innerText ='Brand New Item';
+            itemParent.appendChild(newItem);
+        })
+
+        document.getElementById('myList').addEventListener('click', function(event){
+//            console.log(this, event.target);
+            event.target.parentNode.removeChild(event.target);
+        })
+
+    </script>
+</body>
+
+</html>
