@@ -17,6 +17,8 @@ body{
 
 #transaction-area h1{
     text-align: center;
+    margin-bottom: 50px;
+    font-size: 80px;
 }
 
 .status{
