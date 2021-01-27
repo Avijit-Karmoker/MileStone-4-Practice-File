@@ -12,7 +12,7 @@ loginBtn.addEventListener('click', function(){
 
 const depositBtn = document.getElementById("addDeposit");
 depositBtn.addEventListener("click", function(){
-    const depositeNumber = getInputNumber("depositAmount");
+    const depositNumber = getInputNumber("depositAmount");
     
 //    put deposite amount in the input and show and add them
     
@@ -40,7 +40,7 @@ withdrawBtn.addEventListener("click", function(){
     const withdrawNumber = getInputNumber("withdrawAmount");
     
     updateSpanText("currentWithdraw", withdrawNumber);
-    updateSpanText("currentBalance", -1*withdrawNumber)
+    updateSpanText("currentBalance", -1*withdrawNumber);
     
     document.getElementById("withdrawAmount").value = "";
 })
